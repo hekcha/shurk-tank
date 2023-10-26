@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <Navbar toggle={toggle} />
       <Sidebar isopen={isOpen} toggle={toggle} />
       <div
@@ -20,7 +20,7 @@ function App() {
       >
         Shree Ansh Agarbatti
       </div>
-    </>
+    </div>
   );
 }
 
