@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { navbarItems } from '../../constants/navbarItems';
 
-const Navbar = ({ toggle }) => {
+export const Navbar = ({ toggle }) => {
   return (
     <nav className="flex justify-between items-center">
       Shree Ansh Agarbatti
@@ -19,5 +19,3 @@ const Navbar = ({ toggle }) => {
     </nav>
   );
 };
-
-export default Navbar;

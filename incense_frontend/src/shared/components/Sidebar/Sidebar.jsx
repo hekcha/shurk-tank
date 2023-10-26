@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 import { navbarItems } from '../../constants/navbarItems';
 
-const Sidebar = ({ isopen, toggle }) => {
+export const Sidebar = ({ isopen, toggle }) => {
   let opacityClasses = ['sidebar-container'];
   if (isopen) {
     opacityClasses.push('opacity-on');
@@ -29,5 +29,3 @@ const Sidebar = ({ isopen, toggle }) => {
     </div>
   );
 };
-
-export default Sidebar;

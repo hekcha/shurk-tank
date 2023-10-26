@@ -1,6 +1,5 @@
 import './App.css';
-import Navbar from './shared/components/Navbar/Navbar';
-import Sidebar from './shared/components/Sidebar/Sidebar';
+import { Navbar, Sidebar } from './shared/components/index.js';
 import { color } from './shared/constants/colors';
 
 import { useState } from 'react';
