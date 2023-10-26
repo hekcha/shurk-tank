@@ -1,6 +1,6 @@
 import './App.css';
 import { Navbar, Sidebar, Footer } from './shared/components/index.js';
-import { color } from './shared/constants/colors';
+import { About } from './screens/index.js';
 
 import { useState } from 'react';
 
@@ -14,12 +14,7 @@ function App() {
     <div>
       <Navbar toggle={toggle} />
       <Sidebar isopen={isOpen} toggle={toggle} />
-      <div
-        className="App flex justify-center items-center h-screen "
-        style={{ color: color['cherry-blossom-pink'] }}
-      >
-        Shree Ansh Agarbatti
-      </div>
+      <About />
       <Footer />
     </div>
   );
