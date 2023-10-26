@@ -1,4 +1,4 @@
-export let color = {
+export const color = {
   'cherry-blossom-pink': '#FDAEBAff',
   'light-coral': '#E18080ff',
   'salmon-pink': '#FE829Bff',
@@ -6,4 +6,4 @@ export let color = {
   'lavender-blush': '#EDE6EAff',
 };
 
-export * as colors from './colors.jsx';
+export * as colors from './colors.js';
