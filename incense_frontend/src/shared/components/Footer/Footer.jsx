@@ -1,9 +1,11 @@
-import React from 'react';
 import './Footer.css';
 import logo from '../../../assets/logo-white.png';
-import instagram from '../../../assets/instagram.svg';
-import facebook from '../../../assets/facebook.svg';
-import twitter from '../../../assets/twitter.svg';
+import {
+  addressInfo,
+  footerLinks1,
+  footerLinks2,
+  socialMediaLinks,
+} from '../../constants/index.constants.js';
 
 export const Footer = () => {
   return (
@@ -64,37 +66,28 @@ export const Footer = () => {
                   }}
                 />
               </div>
-              {/* <h4 className="text-3xl fonat-semibold text-blueGray-700">
-                Let's keep in touch!
-              </h4> */}
               <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
                 Find us on any of these platforms, we respond 1-2 business days.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
-                <button
-                  className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
-                  type="button"
-                >
-                  <span className="flex justify-center items-center">
-                    <img src={facebook} className="h-5" alt="social media" />
-                  </span>
-                </button>
-                <button
-                  className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
-                  type="button"
-                >
-                  <span className="flex justify-center items-center">
-                    <img src={instagram} className="h-5" alt="social media" />
-                  </span>
-                </button>
-                <button
-                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
-                  type="button"
-                >
-                  <span className="flex justify-center items-center">
-                    <img src={twitter} className="h-5" alt="social media" />
-                  </span>
-                </button>
+                {socialMediaLinks.map((e, i) => {
+                  return (
+                    <button
+                      className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
+                      type="button"
+                      title={e.Title}
+                      key={i}
+                    >
+                      <span className="flex justify-center items-center">
+                        <img
+                          src={e.SVGPath}
+                          className="h-5"
+                          alt="social media"
+                        />
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
@@ -104,38 +97,18 @@ export const Footer = () => {
                     Useful Links
                   </span>
                   <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=njs-profile"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=njs-profile"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=njs-profile"
-                      >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
-                      >
-                        Free Products
-                      </a>
-                    </li>
+                    {footerLinks1.map((e, i) => {
+                      return (
+                        <li key={i}>
+                          <a
+                            className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                            href={e.Link}
+                          >
+                            {e.Title}
+                          </a>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
                 <div className="w-full lg:w-4/12 px-4">
@@ -143,38 +116,18 @@ export const Footer = () => {
                     Other Resources
                   </span>
                   <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=njs-profile"
-                      >
-                        Terms &amp; Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=njs-profile"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=njs-profile"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
+                    {footerLinks2.map((e, i) => {
+                      return (
+                        <li key={i}>
+                          <a
+                            className="text-blueGray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                            href={e.Link}
+                          >
+                            {e.Title}
+                          </a>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
@@ -191,9 +144,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {' '}
-                  Shree Ansh Agarbatti co. Gola Bazar, Gorakhpur, Uttar Pradesh,
-                  273408, India
+                  {' ' + addressInfo.fullAddress}
                 </a>
                 .
               </div>

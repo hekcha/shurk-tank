@@ -1,10 +1,12 @@
-import React from 'react';
 import circles from '../../assets/circles.svg';
 import first from '../../assets/1st.jpg';
 import second from '../../assets/2nd.jpg';
 import third from '../../assets/3rd.jpg';
-import { color } from '../../shared/constants/colors';
-import { Heading } from '../../shared/components/Heading/Heading';
+import {
+  color,
+  aboutUsPageDetails,
+} from '../../shared/constants/index.constants.js';
+import { Heading } from '../../shared/components/index.components.js';
 
 export const About = () => {
   return (
@@ -39,27 +41,16 @@ export const About = () => {
                   Why Choose Us?
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
-                  Exceptional fragrances, quality, innovation, and
-                  customer-focused variety set us apart.
+                  {aboutUsPageDetails.TagLine1}
                 </h2>
                 <p className="mb-8 text-base text-body-color">
-                  Shree Ansh Agarbatti is a renowned brand known for crafting
-                  fragrant incense sticks. With state-of-the-art facilities in
-                  Gorakhpur, we produce a wide range of premium incense
-                  products, including our flagship collection. We prioritize
-                  customer satisfaction, innovation, and creativity, carefully
-                  creating each incense stick. Our product line consists of 35
-                  varieties, spanning floral, oriental, premium, woody,
-                  cosmetic, and florabatti fragrances.
+                  {aboutUsPageDetails.TagLine2}
                 </p>
                 <span className="block mb-2 text-lg font-semibold text-primary">
                   Our Vision
                 </span>
                 <p className="mb-8 text-base text-body-color">
-                  The brand envisions a future where every Indian household uses
-                  Shree Ansh Agarbatti to enhance prayers with purity and
-                  divinity. Incense sticks purify prayers, uplift moods, bring
-                  calmness, and improve concentration.
+                  {aboutUsPageDetails.Vision}
                 </p>
                 <a
                   href="/#"

@@ -1,3 +1,5 @@
+import { addressInfo } from '../../shared/constants/index.constants.js';
+
 export const Contact = () => {
   return (
     <>
@@ -28,9 +30,7 @@ export const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {' '}
-                    Shree Ansh Agarbatti co. Gola Bazar, Gorakhpur, Uttar
-                    Pradesh, 273408, India
+                    {addressInfo.fullAddress}
                   </a>
                 </p>
               </div>
@@ -39,15 +39,15 @@ export const Contact = () => {
                   EMAIL
                 </h2>
                 <a
-                  href="mailto:shreeansh26@gmail.com"
+                  href={'mailto:' + addressInfo.emailAddress}
                   className="text-red-500 leading-relaxed"
                 >
-                  shreeansh26@gmail.com
+                  {addressInfo.emailAddress}
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed">+91 9889733153</p>
+                <p className="leading-relaxed">{addressInfo.phoneNumber}</p>
               </div>
             </div>
           </div>

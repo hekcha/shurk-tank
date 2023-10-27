@@ -1,6 +1,5 @@
-import React from 'react';
 import './Sidebar.css';
-import { navbarItems } from '../../constants/navbarItems';
+import { sidebarItems } from '../../constants/index.constants.js';
 
 export const Sidebar = ({ isopen, toggle }) => {
   let opacityClasses = ['sidebar-container'];
@@ -34,8 +33,12 @@ export const Sidebar = ({ isopen, toggle }) => {
       </div>
       <div className="sidebar-wrapper">
         <div className="sidebar-menu">
-          {navbarItems.map((item, index) => {
-            return <span key={index}>{item.name}</span>;
+          {sidebarItems.map((item, index) => {
+            return (
+              <a href={item.link} key={index}>
+                {item.name}
+              </a>
+            );
           })}
         </div>
       </div>

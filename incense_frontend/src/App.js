@@ -1,6 +1,6 @@
 import './App.css';
-import { Navbar, Sidebar, Footer } from './shared/components/index.js';
-import {  About, Contact } from './screens/index.js';
+import { Navbar, Sidebar, Footer } from './shared/components/index.components.js';
+import {  About, Contact } from './screens/index.screens.js';
 
 import { useState } from 'react';
 
