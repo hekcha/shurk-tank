@@ -49,7 +49,7 @@ export const Footer = () => {
       </svg>
 
       <footer
-        className="relative pt-8 pb-6"
+        className="relative pb-6"
         style={{
           backgroundImage: 'linear-gradient(0.25turn, #F78DA7 5%, #8ED1FC 95%)',
         }}
@@ -72,11 +72,17 @@ export const Footer = () => {
               <div className="mt-6 lg:mb-0 mb-6">
                 {socialMediaLinks.map((e, i) => {
                   return (
-                    <a href={e.Link} key={i} target='_blank'>
+                    <a
+                      href={e.Link}
+                      key={i}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <button
                         className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
                         type="button"
                         title={e.Title}
+                        key={i}
                       >
                         <span className="flex justify-center items-center">
                           <img
@@ -143,7 +149,7 @@ export const Footer = () => {
                   href="https://maps.app.goo.gl/esvj5UkrWBXzgWoY6"
                   className="text-blueGray-500 hover:text-gray-800"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   {' ' + addressInfo.fullAddress}
                 </a>

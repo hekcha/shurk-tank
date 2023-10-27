@@ -1,6 +1,7 @@
 import instagram from '../../assets/instagram.svg';
 import facebook from '../../assets/facebook.svg';
 import twitter from '../../assets/twitter.svg';
+import whatsapp from '../../assets/whatsapp.svg';
 
 export const addressInfo = {
   fullAddress: `Shree Ansh Agarbatti co. Gola Bazar, Gorakhpur, Uttar Pradesh, 273408, India`,
@@ -69,5 +70,10 @@ export const socialMediaLinks = [
     Title: 'Twitter',
     SVGPath: twitter,
     Link: 'https://twitter.com/AnshAgarbatti?t=Lt2kaeNpGzyNQ6wxqxNj9Q&s=09',
+  },
+  {
+    Title: 'Whatsapp',
+    SVGPath: whatsapp,
+    Link: 'https://wa.me/91' + addressInfo.phoneNumber.split(' ')[1],
   },
 ];
