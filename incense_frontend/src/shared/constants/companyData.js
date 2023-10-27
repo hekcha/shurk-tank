@@ -58,16 +58,16 @@ export const socialMediaLinks = [
   {
     Title: 'Facebook',
     SVGPath: facebook,
-    Link: '#',
+    Link: 'https://www.facebook.com/shree.ansh.7',
   },
   {
     Title: 'Instagram',
     SVGPath: instagram,
-    Link: '#',
+    Link: 'https://www.instagram.com/shree_ansh_agarbatti',
   },
   {
     Title: 'Twitter',
     SVGPath: twitter,
-    Link: '#',
+    Link: 'https://twitter.com/AnshAgarbatti?t=Lt2kaeNpGzyNQ6wxqxNj9Q&s=09',
   },
 ];

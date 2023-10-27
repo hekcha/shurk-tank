@@ -1,4 +1,4 @@
-import { addressInfo } from '../../shared/constants/index.constants.js';
+import { addressInfo, color } from '../../shared/constants/index.constants.js';
 
 export const Contact = () => {
   return (
@@ -56,7 +56,7 @@ export const Contact = () => {
               Feedback
             </h2>
             <p className="leading-relaxed mb-5 text-gray-600">
-              Post-ironic portland shabby chic echo park, banjo fashion axe
+              Send your feedback to help make us better.
             </p>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">
@@ -96,12 +96,17 @@ export const Contact = () => {
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-              Button
+            <button
+              className="border-0 py-2 px-6 font-semibold focus:outline-none rounded text-lg hover:translate-y-1 active:translate-y-1 transition-all"
+              style={{
+                background: color['cherry-blossom-pink'],
+                color: 'black',
+              }}
+            >
+              Submit!
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
+              This form submits your feedback directly to us.
             </p>
           </div>
         </div>

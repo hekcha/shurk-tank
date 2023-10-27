@@ -54,7 +54,7 @@ export const About = () => {
                 </p>
                 <a
                   href="/#"
-                  className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-center text-black rounded-lg hover:bg-opacity-90 lg:px-8 xl:px-10"
+                  className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-center text-black rounded-lg hover:bg-opacity-90 lg:px-8 xl:px-10 hover:translate-y-1 active:translate-y-1 transition-all"
                   style={{
                     background: color['cherry-blossom-pink'],
                     color: 'black',

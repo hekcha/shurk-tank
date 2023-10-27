@@ -72,20 +72,21 @@ export const Footer = () => {
               <div className="mt-6 lg:mb-0 mb-6">
                 {socialMediaLinks.map((e, i) => {
                   return (
-                    <button
-                      className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
-                      type="button"
-                      title={e.Title}
-                      key={i}
-                    >
-                      <span className="flex justify-center items-center">
-                        <img
-                          src={e.SVGPath}
-                          className="h-5"
-                          alt="social media"
-                        />
-                      </span>
-                    </button>
+                    <a href={e.Link} key={i} target='_blank'>
+                      <button
+                        className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:translate-y-1 active:translate-y-1 transition-all"
+                        type="button"
+                        title={e.Title}
+                      >
+                        <span className="flex justify-center items-center">
+                          <img
+                            src={e.SVGPath}
+                            className="h-5"
+                            alt="social media"
+                          />
+                        </span>
+                      </button>
+                    </a>
                   );
                 })}
               </div>
