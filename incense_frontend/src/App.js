@@ -1,6 +1,12 @@
 import './App.css';
-import { Navbar, Sidebar, Footer } from './shared/components/index.components.js';
-import {  About, Contact } from './screens/index.screens.js';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  Navbar,
+  Sidebar,
+  Footer,
+} from './shared/components/index.components.js';
+import { About, Contact } from './screens/index.screens.js';
 
 import { useState } from 'react';
 
@@ -11,13 +17,17 @@ function App() {
   };
 
   return (
-    <div>
-      <Navbar toggle={toggle} />
-      <Sidebar isopen={isOpen} toggle={toggle} />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <React.Fragment>
+      <Router>
+        <Navbar toggle={toggle} />
+        <Sidebar isopen={isOpen} toggle={toggle} />
+        <Routes>
+          <Route path="/about" Component={About} />
+          <Route path="/contact" Component={Contact} />
+        </Routes>
+        <Footer />
+      </Router>
+    </React.Fragment>
   );
 }
 
