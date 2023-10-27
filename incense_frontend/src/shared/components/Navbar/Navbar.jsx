@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
-import React from 'react';
 import './Navbar.css';
-import { navbarItems } from '../../constants/navbarItems';
+import { useState, useEffect } from 'react';
+import { navbarItems } from '../../constants/index.constants.js';
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);

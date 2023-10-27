@@ -1,6 +1,6 @@
 import './App.css';
-import { Navbar, Sidebar, Footer } from './shared/components/index.js';
-import { About } from './screens/index.js';
+import { Navbar, Sidebar, Footer } from './shared/components/index.components.js';
+import {  About, Contact } from './screens/index.screens.js';
 
 import { useState } from 'react';
 
@@ -15,6 +15,7 @@ function App() {
       <Navbar toggle={toggle} />
       <Sidebar isopen={isOpen} toggle={toggle} />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
