@@ -1,6 +1,6 @@
-import instagram from '../../assets/instagram.svg';
-import facebook from '../../assets/facebook.svg';
-import twitter from '../../assets/twitter.svg';
+import instagram from '../../assets-compressed/instagram.svg';
+import facebook from '../../assets-compressed/facebook.svg';
+import twitter from '../../assets-compressed/twitter.svg';
 
 export const addressInfo = {
   fullAddress: `Shree Ansh Agarbatti co. Gola Bazar, Gorakhpur, Uttar Pradesh, 273408, India`,

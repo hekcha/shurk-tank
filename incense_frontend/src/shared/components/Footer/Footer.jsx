@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../../../assets/logo-white.png';
+import logo from '../../../assets-compressed/logo-white.png';
 import {
   addressInfo,
   footerLinks1,

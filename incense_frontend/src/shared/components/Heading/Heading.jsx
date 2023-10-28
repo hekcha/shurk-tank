@@ -1,5 +1,5 @@
 import './Heading.css';
-import imageUnderline from '../../../assets/image-removebg-preview.png';
+import imageUnderline from '../../../assets-compressed/image-removebg-preview.png';
 
 export const Heading = ({ text }) => {
   return (

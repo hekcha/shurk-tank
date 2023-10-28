@@ -3,18 +3,18 @@ import { motion, useAnimation } from 'framer-motion';
 import './Slider.css';
 
 // Import your images here
-import image1 from '../../../assets/48.jpg';
-import image2 from '../../../assets/1st.jpg';
-import image3 from '../../../assets/all-set.jpg';
-import image4 from '../../../assets/charlie-12.jpg';
-import image5 from '../../../assets/divyansh.jpg';
-import logo from '../../../assets/logo.png';
-import banner from '../../../assets/IMG-20210809-WA0014.jpg';
+import image1 from '../../../assets-compressed/48.jpg';
+import image2 from '../../../assets-compressed/1st.jpg';
+import image3 from '../../../assets-compressed/all-set.jpg';
+import image4 from '../../../assets-compressed/charlie-12.jpg';
+import image5 from '../../../assets-compressed/divyansh.jpg';
+import logo from '../../../assets-compressed/logo.png';
+import banner from '../../../assets-compressed/IMG-20210809-WA0014.jpg';
 
-import image6 from '../../../assets/mogra-series.jpg';
-import image7 from '../../../assets/PXL_20210821_150149269 - Copy.jpg';
-import image8 from '../../../assets/shree.jpg';
-import image9 from '../../../assets/vaishnavi.jpg';
+import image6 from '../../../assets-compressed/mogra-series.jpg';
+import image7 from '../../../assets-compressed/PXL_20210821_150149269 - Copy.jpg';
+import image8 from '../../../assets-compressed/shree.jpg';
+import image9 from '../../../assets-compressed/vaishnavi.jpg';
 
 const images = [
   image1,

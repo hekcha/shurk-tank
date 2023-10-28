@@ -1,9 +1,9 @@
 import React from 'react';
-import circles from '../../assets/circles.svg';
-import first from '../../assets/1st.jpg';
-import second from '../../assets/2nd.jpg';
-import third from '../../assets/3rd.jpg';
-import founderImage from '../../assets/Founder.png';
+import circles from '../../assets-compressed/circles.svg';
+import first from '../../assets-compressed/1st.jpg';
+import second from '../../assets-compressed/2nd.jpg';
+import third from '../../assets-compressed/3rd.jpg';
+import founderImage from '../../assets-compressed/Founder.png';
 import {
   color,
   aboutUsPageDetails,
