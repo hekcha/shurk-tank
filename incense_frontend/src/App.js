@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/" exact Component={Home} />
           <Route path="/about" Component={About} />
-          <Route path="/contact" Component={Contact} />
+          <Route path="/contact-us" Component={Contact} />
         </Routes>
         <Footer />
       </Router>

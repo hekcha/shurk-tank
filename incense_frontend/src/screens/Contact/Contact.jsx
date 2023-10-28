@@ -16,7 +16,6 @@ export const Contact = () => {
               marginWidth="0"
               scrolling="no"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.6083767575033!2d83.366911!3d26.339177799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39917791a09a80bd%3A0x9900a17a6a00a2e7!2sSHREE%20ANSH%20AGARBATTI%20CO.!5e0!3m2!1sen!2sin!4v1698425193471!5m2!1sen!2sin"
-              style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
             ></iframe>
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div className="lg:w-1/2 px-6">
@@ -53,10 +52,13 @@ export const Contact = () => {
           </div>
           <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-              Feedback
+              Business with us
             </h2>
             <p className="leading-relaxed mb-5 text-gray-600">
-              Post-ironic portland shabby chic echo park, banjo fashion axe
+              Experience the fragrant journey with Shree Ansh Agarbatti Preminum
+              Incense Stick, your trusted partner in crafting exquisite incense
+              sticks. Join hands with us for a scented venture that's second to
+              none.
             </p>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">
@@ -97,7 +99,7 @@ export const Contact = () => {
               ></textarea>
             </div>
             <button className="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-              Button
+              Submit
             </button>
             <p className="text-xs text-gray-500 mt-3">
               Chicharrones blog helvetica normcore iceland tousled brook viral
