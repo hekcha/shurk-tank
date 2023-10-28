@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { useState, useEffect } from 'react';
 import { navbarItems } from '../../constants/index.constants.js';
-import logo from '../../../assets/Nav-Logo.png';
+import logo from '../../../assets-compressed/Nav-Logo.png';
 import { Link } from 'react-router-dom';
 
 function useScrollDirection() {
@@ -39,14 +39,14 @@ export const Navbar = ({ toggle }) => {
         scrollDirection === 'down' ? '-top-24' : 'top-0'
       } flex justify-between items-center transition-all duration-500`}
     >
-      <img src={logo} alt="logo" className="m-auto  mb-9" />
+      <img src={logo} alt="logo" className="m-auto mb-9" />
       <div className="flex flex-row w-[50%] ">
         <div className="flex flex-row mx-[120px] w-full sm:justify-between md:justify-between">
           {navbarItems.map((item, index) => {
             return (
-              <a href={item.link} key={index} className="menu-items">
+              <Link to={item.link} key={index} className="menu-items">
                 {item.name}
-              </a>
+              </Link>
             );
           })}
         </div>
