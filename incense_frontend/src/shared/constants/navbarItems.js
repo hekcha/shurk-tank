@@ -1,19 +1,19 @@
 export const navbarItems = [
   {
     name: 'Home',
-    link: '#',
+    link: '/',
   },
   {
     name: 'About',
-    link: '#',
+    link: '/about',
   },
   {
     name: 'Products',
-    link: '#',
+    link: '/products',
   },
   {
     name: 'Contact Us',
-    link: '#',
+    link: '/contact-us',
   },
 ];
 

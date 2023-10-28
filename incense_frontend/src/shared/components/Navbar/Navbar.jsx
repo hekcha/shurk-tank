@@ -1,6 +1,8 @@
 import './Navbar.css';
 import { useState, useEffect } from 'react';
 import { navbarItems } from '../../constants/index.constants.js';
+import logo from '../../../assets/Nav-Logo.png';
+import { Link } from 'react-router-dom';
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -37,15 +39,17 @@ export const Navbar = ({ toggle }) => {
         scrollDirection === 'down' ? '-top-24' : 'top-0'
       } flex justify-between items-center transition-all duration-500`}
     >
-      Shree Ansh Agarbatti
-      <div className="flex flex-row">
-        {navbarItems.map((item, index) => {
-          return (
-            <span key={index} className="menu-items">
-              {item.name}
-            </span>
-          );
-        })}
+      <img src={logo} alt="logo" className="m-auto  mb-9" />
+      <div className="flex flex-row w-[50%] ">
+        <div className="flex flex-row mx-[120px] w-full sm:justify-between md:justify-between">
+          {navbarItems.map((item, index) => {
+            return (
+              <a href={item.link} key={index} className="menu-items">
+                {item.name}
+              </a>
+            );
+          })}
+        </div>
         <div className="icons">
           <div className="mobile-menu-icon">
             <span onClick={toggle}>
@@ -56,10 +60,10 @@ export const Navbar = ({ toggle }) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 style={{
-                  strokeWidth: '2',
+                  strokeWidth: '3',
                   strokeLinecap: 'round',
                 }}
-                className="hover:[stroke:gray] [stroke:#fff]"
+                className="hover:[stroke:gray] [stroke:black]"
               >
                 <path d="M4 18L20 18" />
                 <path d="M4 12L20 12" />
