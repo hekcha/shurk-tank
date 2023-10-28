@@ -1,0 +1,11 @@
+.image-underline {
+  margin: -20px auto 20px;
+}
+
+.heading {
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  margin: -10px;
+  font-family: 'Edu SA Beginner', cursive;
+}

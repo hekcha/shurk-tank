@@ -14,6 +14,7 @@ export const aboutUsPageDetails = {
   TagLine1: `Exceptional fragrances, quality, innovation, and customer-focused variety set us apart.`,
   TagLine2: `Shree Ansh Agarbatti is a renowned brand known for crafting fragrant incense sticks. With state-of-the-art facilities in Gorakhpur, we produce a wide range of premium incense products, including our flagship collection. We prioritize customer satisfaction, innovation, and creativity, carefully creating each incense stick. Our product line consists of 35 varieties, spanning floral, oriental, premium, woody, cosmetic, and florabatti fragrances.`,
   Vision: `The brand envisions a future where every Indian household uses Shree Ansh Agarbatti to enhance prayers with purity and divinity. Incense sticks purify prayers, uplift moods, bring calmness, and improve concentration.`,
+  aboutFounder: `The Founder, Late Mr. Anup Chaurasia through his hard work, dedication, and dynamism made the company most trusted and popular brands. Now run and operated by Amit Chaurasia. With his hardwork and dedication, we try to provide best quality incense sticks to our customers.`,
 };
 
 export const footerLinks1 = [

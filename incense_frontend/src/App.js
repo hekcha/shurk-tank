@@ -6,7 +6,7 @@ import {
   Sidebar,
   Footer,
 } from './shared/components/index.components.js';
-import { About, Contact } from './screens/index.screens.js';
+import { About, Contact, Home } from './screens/index.screens.js';
 
 import { useState } from 'react';
 
@@ -22,6 +22,7 @@ function App() {
         <Navbar toggle={toggle} />
         <Sidebar isopen={isOpen} toggle={toggle} />
         <Routes>
+          <Route path="/" exact Component={Home} />
           <Route path="/about" Component={About} />
           <Route path="/contact" Component={Contact} />
         </Routes>
