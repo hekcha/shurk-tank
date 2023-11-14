@@ -2,10 +2,20 @@
   margin: -20px auto 20px;
 }
 
+.god {
+  margin: -20px 42% 50px;
+  font-family: 'Varela';
+  font-weight: 600;
+  @media screen and (max-width: 640px) {
+    margin: -20px 14vw 50px;
+  }
+}
+
 .heading {
   display: flex;
   font-size: 60px;
   justify-content: center;
   margin: -10px;
+  margin-bottom: 50px;
   font-family: 'Edu SA Beginner', cursive;
 }
