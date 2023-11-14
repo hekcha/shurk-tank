@@ -1,0 +1,97 @@
+/* Base styles */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 90%;
+  margin: auto; /* Center the images */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image specifics could be adjusted if needed */
+.first-image,
+.second-image,
+.third-image {
+  grid-column: 1;
+}
+
+.content-container {
+  max-width: 90%;
+}
+
+.founder-container,
+.why-choose-us,
+.our-vision,
+.order-now {
+  margin-bottom: 20px;
+}
+
+.founder-image {
+  width: 120px; /* Adjust as needed */
+  height: 120px; /* Adjust as needed */
+  border-radius: 50%;
+  border: 4px solid red; /* Adjust color as needed */
+  padding: 3px;
+  margin: 0 auto; /* Center the image */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fdaeba; /* Cherry Blossom Pink */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+  background-color: #e18080; /* Light Coral */
+}
+
+/* Media query for tablets and desktops */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .images-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+  }
+
+  .first-image {
+    grid-row: span 2;
+  }
+
+  .content-container {
+    max-width: 50%;
+  }
+
+  .founder-image {
+    margin: 0; /* Reset for desktop */
+  }
+
+  button {
+    margin: 0; /* Reset for desktop */
+  }
+}
+
+/* Additional media query adjustments for larger screens could be added as necessary */

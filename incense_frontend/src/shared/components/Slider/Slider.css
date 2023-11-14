@@ -1,5 +1,6 @@
 .slider {
-  margin: 20px;
+  margin-top: -40px;
+  margin-bottom: 60px;
 }
 .item {
   min-height: 25rem;
